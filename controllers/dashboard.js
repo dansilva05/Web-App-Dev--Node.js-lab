@@ -1,7 +1,7 @@
 'use strict';
 
-import employeeStore from "../models/employee-store.js";
 import logger from "../utils/logger.js";
+import playlistStore from "../models/playlist-store.js";
 
 const dashboard = {
   createView(request, response) {
@@ -9,8 +9,10 @@ const dashboard = {
     
     const viewData = {
       title: "Playlist App Dashboard",
-      employee: employeeStore.getAppInfo(),
+      playlists: playlistStore.getAllPlaylists()
     };
+    
+    logger.debug(viewData.playlists);
     
     response.render('dashboard', viewData);
   },

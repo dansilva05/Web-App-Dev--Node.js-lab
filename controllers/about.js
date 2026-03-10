@@ -9,8 +9,10 @@ const about = {
 
     const viewData = {
       title: "Playlist App About",
-      employee: employeeStore.getAppInfo(),
+      employees: employeeStore.getAppInfo(),
     };
+
+    logger.debug(viewData.employees);
 
     response.render('about', viewData);   
   },
