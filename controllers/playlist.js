@@ -26,6 +26,7 @@ const playlist = {
       title: request.body.title,
       artist: request.body.artist,
     };
+    logger.debug("Informations taken.");
     playlistStore.addSong(playlistId, newSong);
     response.redirect('/playlist/' + playlistId);
   },
