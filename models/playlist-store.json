@@ -1,77 +1,34 @@
 {
   "playlistCollection": [
     {
-      "id": "01",
-      "title": "Beethoven Sonatas",
+      "userid": "3ad52697-6d98-4d80-8273-084de55a86c0",
+      "id": "e93f4b34-140a-4a25-b8ae-36e2ff24aff5",
+      "title": "Homer's Playlist",
+      "rating": 4,
+      "songs": [],
+      "date": "2026-04-10T14:39:25.112Z"
+    },
+    {
+      "userid": "2b6f0989-7b7f-4a38-ad26-aa06b922d751",
+      "id": "f9de08c1-5567-4ad7-a685-fbce474fa9d4",
+      "title": "Marge's Playlist",
+      "rating": 3,
+      "songs": [],
+      "date": "2026-04-10T14:40:09.467Z"
+    },
+    {
+      "userid": "201bfbae-7e01-46c8-8dda-b55edaf45b67",
+      "id": "dfbccbe9-9b84-41c8-b437-9c0cef838fff",
+      "title": "aaaaa",
       "rating": 3,
       "songs": [
         {
-          "id": "04",
-          "title": "Piano Sonata No. 3",
-          "artist": "Beethoven"
-        },
-        {
-          "id": "05",
-          "title": "Piano Sonata No. 7",
-          "artist": "Beethoven"
-        },
-        {
-          "id": "06",
-          "title": "Piano Sonata No. 10",
-          "artist": "Beethoven"
+          "id": "2a8d831f-3754-42e0-9c93-3968a4e522b7",
+          "title": "yterhg",
+          "artist": "yetrhge"
         }
-      ]
-    },
-    {
-      "id": "02",
-      "title": "Beethoven Concertos",
-      "rating": 4,
-      "songs": [
-        {
-          "id": "07",
-          "title": "Piano Concerto No. 0",
-          "artist": "Beethoven"
-        },
-        {
-          "id": "08",
-          "title": "Piano Concerto No. 4",
-          "artist": "Beethoven"
-        },
-        {
-          "id": "09",
-          "title": "Piano Concerto No. 6",
-          "artist": "Beethoven"
-        },
-        {
-          "id": "14b62b1e-bf30-4f60-b6e3-f13e1eceda67",
-          "title": "gegyf",
-          "artist": "sdgbvfd"
-        }
-      ]
-    },
-    {
-      "id": "03",
-      "title": "Beethoven Unfinished Symphonies",
-      "rating": 1,
-      "songs": [
-        {
-          "id": "aa5c64dd-a8d4-4b8a-9f1d-8346d575f253",
-          "title": "secret",
-          "artist": "top secret"
-        },
-        {
-          "id": "72ae654b-8d0c-408e-97a2-83f833e4dbd6",
-          "title": "efrver",
-          "artist": "efvece"
-        }
-      ]
-    },
-    {
-      "id": "4b6e772b-7d40-4a38-876f-bb60a0940e6b",
-      "title": "gfb",
-      "rating": 5,
-      "date": "2026-03-24T12:03:20.251Z",
-      "songs": []
+      ],
+      "date": "2026-04-22T02:20:37.621Z"
     }
   ]
 }
