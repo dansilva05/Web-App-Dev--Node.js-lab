@@ -3,6 +3,7 @@
 import logger from "../utils/logger.js";
 import playlistStore from "../models/playlist-store.js";
 import accounts from './accounts.js';
+import userStore from '../models/user-store.js';
 
 const stats = {
     createView(request, response) {
@@ -18,11 +19,13 @@ const stats = {
 
       let numSongs = playlists.reduce((total, playlist) => total + playlist.songs.length, 0);
 
+      let numUsers = userStore.getAllUsers().length;
+
       let average = numPlaylists > 0 ? (numSongs / numPlaylists).toFixed(2) : 0;
 
       let totalRating = playlists.reduce((total, playlist) => total + parseInt(playlist.rating), 0);
 
-      let avgRating = numPlaylists > 0 ? totalRating / numPlaylists : 0;
+      let avgRating = numPlaylists > 0 ? (totalRating / numPlaylists).toFixed(2) : 0;
 
       let maxRating = playlists.length > 0 ? Math.max(...playlists.map(playlist => playlist.rating)) : 0;
       let maxRated = playlists.filter(playlist => playlist.rating === maxRating);
@@ -35,6 +38,7 @@ const stats = {
       const statistics = {
         displayNumPlaylists: numPlaylists,
         displayNumSongs: numSongs,
+        displayNumUsers: numUsers,
         displayAverage: average,
         displayAvgRating: avgRating,
         highest: maxRating,
